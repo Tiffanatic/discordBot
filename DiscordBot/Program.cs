@@ -13,7 +13,7 @@ namespace DiscordBot
             {
                 Console.WriteLine("0.0.1");
             }
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello, mom!");
         }
     }
 }
