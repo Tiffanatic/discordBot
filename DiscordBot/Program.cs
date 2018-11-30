@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiscordBot.Storage.Implementations;
+using System;
 using System.Linq;
 
 namespace DiscordBot
@@ -7,13 +8,11 @@ namespace DiscordBot
     {
         private static void Main(string[] args)
         {
-            args = new string[0];
-
-            if(args.Any() && args[0] == "--version")
-            {
-                Console.WriteLine("0.0.1");
-            }
             Console.WriteLine("Hello, mom!");
+
+            var ds = new InMemoryStorage();
+
+            IDataStorage ids = ds;
         }
     }
 }
