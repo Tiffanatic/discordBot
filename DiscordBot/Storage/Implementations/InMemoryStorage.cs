@@ -6,6 +6,11 @@ namespace DiscordBot.Storage.Implementations
 {
     class InMemoryStorage : IDataStorage
     {
+        public InMemoryStorage()
+        {
+            Console.WriteLine("Constructor inmemorystorage happened");
+        }
+
         private Dictionary<string, object> _dictionary = new Dictionary<string, object>();
 
         public T GetObject<T>(string key)
