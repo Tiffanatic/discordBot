@@ -1,6 +1,5 @@
-﻿using DiscordBot.Storage.Implementations;
-using System;
-using System.Linq;
+﻿using System;
+
 
 namespace DiscordBot
 {
@@ -8,11 +7,11 @@ namespace DiscordBot
     {
         private static void Main(string[] args)
         {
+            Unity.RegisterTypes();
             Console.WriteLine("Hello, mom!");
+            Console.ReadLine();
 
-            var ds = new InMemoryStorage();
-
-            IDataStorage ids = ds;
         }
     }
+
 }
